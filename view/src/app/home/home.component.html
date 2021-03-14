@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>HOME</h1>
+
+    <p *ngIf="3 == 3">
+        teste com ngIf
+    </p>
+    <p [hidden]="true">
+        teste com ngShow
+    </p>
+    <a class="btn btn-info" [href]="url">SOBRE</a>
+    <a class="btn btn-success" (click)="exibeAlerta($event)" >TESTE COM CLICK</a>
+
+    <ul>
+        <li *ngFor="let produto of produtos; let i = index">
+            {{i + 1}} | {{produto.titulo}} - {{produto.descricao}}
+        </li>
+    </ul>
+</div>
