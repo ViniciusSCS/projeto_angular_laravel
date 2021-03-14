@@ -8,11 +8,14 @@
         teste com ngShow
     </p>
     <a class="btn btn-info" [href]="url">SOBRE</a>
-    <a class="btn btn-success" (click)="exibeAlerta($event)" >TESTE COM CLICK</a>
+    <a class="btn btn-success" (click)="exibeAlerta($event)">TESTE COM CLICK</a>
 
     <ul>
         <li *ngFor="let produto of produtos; let i = index">
             {{i + 1}} | {{produto.titulo}} - {{produto.descricao}}
         </li>
     </ul>
+
+    <input type="text" [(ngModel)]="nome"> {{nome}}
+    <app-button tipoBtn="botao-verde-success" nomeBtn="Enviar"></app-button>
 </div>

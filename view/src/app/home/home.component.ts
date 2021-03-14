@@ -38,7 +38,9 @@ export class HomeComponent implements OnInit {
         }
     ]
 
-    exibeAlerta(evento){
+    public nome: string = "Vinícius"
+
+    exibeAlerta(evento) {
         alert("OK")
     }
 
